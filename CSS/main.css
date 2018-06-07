@@ -1,0 +1,448 @@
+html,
+body,
+.view {
+    height: 100%;
+    position: relative;
+    background-color: #efefef;
+}
+
+hr {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+    margin-bottom: 0;
+}
+
+.front-page {
+    height: 100vh;
+    background-image: url('Media/BlackBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First Page Animation */
+.name-heading .display-3 {
+    font-family: 'Parisienne', cursive;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 4s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+.name-heading .h2 {
+    font-family: 'Itim', cursive;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
+.name-heading {
+    margin-top: 35vh;
+}
+
+@media only screen and (max-width: 760px) {
+    .name-heading .display-3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .name-heading .display-3 {
+        font-size: 2rem;
+    }
+    .name-heading .h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Navbar animation */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.top-nav-collapse {
+    background-color: #1C2331;
+}
+
+.nav-item .active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-item:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(63, 81, 181, 0.7) ;
+}
+
+.nav-sticky {
+    padding-top: 100px;
+}
+
+.img-fluid {
+    min-width: 100%;
+}
+
+.img-thumbnail {
+    width: 15vh;
+    border-radius: 50%;
+}
+
+.header-para {
+    font-size: 1.5rem;
+}
+
+/* Footer color for sake of consistency with Navbar */
+
+.page-footer {
+    background-color: #1C2331;
+}
+
+#profilePic {
+    display: inline;
+}
+
+/* Adding height to the Name on mobile */
+
+@media only screen and (max-width: 320px) {
+    .name-heading {
+        margin-top: 20vh;
+    }
+    .mb-4.h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Adding height to the Name on mobile */
+
+@media only screen and (max-width: 375px) {
+    .name-heading {
+        margin-top: 22vh;
+    }
+    .mb-4.h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Adding height to the Name on wide laptop */
+
+@media only screen and (max-width: 1400px) {
+    .name-heading {
+        margin-top: 30vh;
+    }
+    .name-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* Resume Section */
+
+.resume {
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.section-about .text-download,
+.section-about .text-available,
+.section-about h3,
+.section-about .title-info,
+.section-about .title-links,
+.section-about .li-social-links a,
+.section-skills,
+.section-skills .title-progress span,
+.section-education .ul-education,
+.section-experience .icon-experience,
+.section-experience .company-name {
+    color: #757575;
+}
+
+.section-skills {
+    margin-bottom: 4.8rem;
+}
+
+.section-skills .progress {
+    background-color: #757575;
+}
+
+.section-about,
+.section-skills .professional-skills,
+.section-skills .additional-skills,
+.section-education .education-content,
+.section-experience .icon-experience,
+.section-experience .experience-content {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.11);
+}
+
+.section-about .download-resume {
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+}
+
+.section-about,
+.section-skills .professional-skills,
+.section-skills .additional-skills,
+.section-education .education-content,
+.section-experience .icon-experience,
+.section-experience .experience-content {
+    background-color: #ffffff;
+}
+
+.section-about .photo-profile img {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+}
+
+.section-about .available,
+.section-skills .title-skills {
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+}
+
+.section h3 {
+    font-size: 1.25rem;
+}
+
+.section .header-section {
+    text-align: center;
+}
+
+.section h2,
+.section-about .available i,
+.section-skills .other-skills i,
+.section-experience .specialty-name {
+    color: #0487cc;
+}
+
+.section h2,
+.section-about .download-resume {
+    font-family: 'Oswald', sans-serif;
+}
+
+.section-about .title-info {
+    font-weight: bold;
+}
+
+.section-skills .h2-section {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.section-skills .professional-skills,
+.section-skills .additional-skills {
+    padding: 0 2rem 2rem;
+}
+
+.section-skills h3,
+.section-skills .progress-bar,
+.section-education h3,
+.section-experience .experience-content::before,
+.section-experience .period-experience,
+.section-interests .interests-slide {
+    background-color: #0487cc;
+}
+
+.section-skills h3,
+.section-education h3,
+.section-experience .period-experience,
+.section-interests .interests-slide {
+    color: #ffffff;
+}
+
+.section-skills h3 {
+    display: inline-block;
+    position: relative;
+    top: -2rem;
+    padding: 1.125rem 1.75rem;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+}
+
+.section-skills .skill-value {
+    position: absolute;
+    right: 2.8125rem;
+}
+
+.section-skills .progress {
+    height: 0.875rem;
+    margin-bottom: 0.8125rem;
+    border-radius: 0px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+}
+
+.section-skills .progress-bar {
+    height: 0.875rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+}
+
+.section-skills .circle {
+    padding-bottom: 1.25rem;
+    text-align: center;
+}
+
+.section-skills .chart-percentage {
+    position: absolute;
+    width: 100%;
+    top: 2.8125rem;
+    left: 0;
+    font-weight: bold;
+}
+
+.section-skills .chart canvas {
+    width: 7.125rem;
+    height: 7.125rem;
+}
+
+.section-skills .circle-progress {
+    padding-bottom: 1.25rem;
+}
+
+@media (max-width: 470px) {
+    .section-skills .professional-skills {
+        margin-bottom: 4.375rem;
+    }
+}
+
+.section-education,
+.section-experience {
+    margin-bottom: 3rem;
+}
+.section-interests {
+    margin-bottom: 8rem;
+}
+
+.section .h2-section {
+    margin-bottom: 3.5rem;
+}
+
+.section-education .education-content {
+    margin-bottom: 1.875rem;
+    padding: 1.875rem;
+}
+
+.section-education h3 {
+    margin-bottom: 1.125rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    min-height: 3.25rem;
+    position: relative;
+    left: -3rem;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, .4);
+}
+
+.section-education h3::before {
+    content: '';
+    position: absolute;
+    top: 3.5rem;
+    left: 0px;
+    border-width: 7px 9px;
+    border-style: solid;
+    border-color: transparent;
+    transition: all .6s;
+}
+
+.section-education h3::before {
+    border-top-color: #035c8a;
+    border-right-color: #035c8a;
+}
+
+.section-experience .icon-experience {
+    display: inline-block;
+    margin-left: 161px;
+    padding: 0.5rem 0.825rem;
+}
+
+.section-experience .all-experience {
+    border-left: 7px solid #ffffff;
+}
+
+.section-experience .all-experience {
+    margin-left: 11.25rem;
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+}
+
+.section-experience .experience-content {
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.section-experience .experience-content::before {
+    content: '';
+    position: absolute;
+    left: 12rem;
+    margin-top: -0.85rem;
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.section-experience .period-experience {
+    display: inline-block;
+    position: absolute;
+    left: -3px;
+    margin-top: -1.875rem;
+    width: 10.875rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1), 0 0 15px rgba(0, 0, 0, .08);
+}
+
+@media (max-width: 470px) {
+    .section-experience .period-experience {
+        position: static;
+        padding-top: 0.375rem;
+        padding-bottom: 0.375rem;
+        margin-bottom: 0.75rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 470px) {
+    .section-experience .experience-content::before {
+        left: 0.75rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .section-experience .icon-experience,
+    .section-experience .all-experience {
+        margin-left: 0;
+    }
+}
+
+.section-interests p {
+    margin-bottom: 2rem;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.section-interests h4 {
+    font-weight: bold;
+}
+
+.section-interests .interests-slide {
+    flex-shrink: 0;
+    width: 8.5rem;
+    padding-top: 2rem;
+    height: 7.5rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,.2), 0 0 15px rgba(0,0,0,.15);
+}
