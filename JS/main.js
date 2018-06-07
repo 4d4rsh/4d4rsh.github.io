@@ -29,3 +29,6 @@ $(function() {
     });
 
 });
+
+// Animations initialization
+new WOW().init();
